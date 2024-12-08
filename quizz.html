@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz sur les Technologies Web</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/cosmo/bootstrap.min.css" rel="stylesheet">
+  <!-- Lien vers Font Awesome pour les icônes -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Quiz : Technologies Web</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="parcours.html">Parcours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="competences.html">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="stages.html">Stages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="manifestations.html">Manifestations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="matieres.html">Matières</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quizz.html">Quizz</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="temoignages.html">Témoignages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <p>Répondez aux questions ci-dessous et cliquez sur "Valider" pour voir votre score et les réponses correctes.</p>
+  </header>
+  <main>
+    <form id="quiz-form">
+      <div class="question">
+        <p>1. Quelle balise HTML est utilisée pour insérer une image ?</p>
+        <label><input type="radio" name="q1" value="a"> a) &lt;image&gt;</label><br>
+        <label><input type="radio" name="q1" value="b"> b) &lt;img&gt;</label><br>
+        <label><input type="radio" name="q1" value="c"> c) &lt;src&gt;</label>
+      </div>
+
+      <div class="question">
+        <p>2. Quel langage est utilisé pour styliser un site web ?</p>
+        <label><input type="radio" name="q2" value="a"> a) HTML</label><br>
+        <label><input type="radio" name="q2" value="b"> b) CSS</label><br>
+        <label><input type="radio" name="q2" value="c"> c) JavaScript</label>
+      </div>
+
+      <div class="question">
+        <p>3. Quel framework JavaScript est utilisé pour le développement front-end ?</p>
+        <label><input type="radio" name="q3" value="a"> a) Django</label><br>
+        <label><input type="radio" name="q3" value="b"> b) Angular</label><br>
+        <label><input type="radio" name="q3" value="c"> c) Flask</label>
+      </div>
+
+      <div class="question">
+        <p>4. Quel attribut HTML est utilisé pour définir un lien hypertexte ?</p>
+        <label><input type="radio" name="q4" value="a"> a) href</label><br>
+        <label><input type="radio" name="q4" value="b"> b) src</label><br>
+        <label><input type="radio" name="q4" value="c"> c) link</label>
+      </div>
+
+      <div class="question">
+        <p>5. Comment appelle-t-on un fichier CSS externe dans un fichier HTML ?</p>
+        <label><input type="radio" name="q5" value="a"> a) &lt;style&gt;</label><br>
+        <label><input type="radio" name="q5" value="b"> b) &lt;link&gt;</label><br>
+        <label><input type="radio" name="q5" value="c"> c) &lt;css&gt;</label>
+      </div>
+
+      <div class="question">
+        <p>6. Quel est le rôle principal de JavaScript ?</p>
+        <label><input type="radio" name="q6" value="a"> a) Créer des animations</label><br>
+        <label><input type="radio" name="q6" value="b"> b) Structurer le contenu</label><br>
+        <label><input type="radio" name="q6" value="c"> c) Ajouter de l'interactivité</label>
+      </div>
+
+
+
+      <div class="question">
+        <p>7. Quelle balise est utilisée pour créer une liste non ordonnée ?</p>
+        <label><input type="radio" name="q7" value="a"> a) ul </label><br>
+        <label><input type="radio" name="q7" value="b"> b) li</label><br>
+        <label><input type="radio" name="q7" value="c"> c) ol </label>
+      </div>
+
+
+
+      <button type="button" id="submit-btn">Valider</button>
+    </form>
+    <div id="result"></div>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactez-moi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/cosmo/bootstrap.min.css" rel="stylesheet">
+  <!-- Lien vers Font Awesome pour les icônes -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <header class="bg-primary text-white text-center py-3">
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="parcours.html">Parcours</a></li>
+                        <li class="nav-item"><a class="nav-link" href="competences.html">Compétences</a></li>
+                        <li class="nav-item"><a class="nav-link" href="stages.html">Stages</a></li>
+                        <li class="nav-item"><a class="nav-link" href="manifestations.html">Manifestations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="matieres.html">Matières</a></li>
+                        <li class="nav-item"><a class="nav-link" href="quizz.html">Quizz</a></li>
+                  
+                        <li class="nav-item"><a class="nav-link" href="temoignages.html">Témoignages</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <h1>Contactez-moi</h1>
+  </header>
+  <main>
+    <form id="contactForm" class="contact-form">
+      <label for="name">Nom complet:</label>
+      <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+
+      <label for="subject">Sujet:</label>
+      <input type="text" id="subject" name="subject" placeholder="Objet de votre message" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Entrez votre message ici..." required></textarea>
+
+      <button type="submit" class="submit-btn">Envoyer</button>
+    </form>
+    <div id="successMessage" class="success-message" style="display: none;">
+      Votre message a été envoyé avec succès !
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 - Mon Site Personnel</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
